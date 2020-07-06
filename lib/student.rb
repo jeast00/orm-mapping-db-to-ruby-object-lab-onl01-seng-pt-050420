@@ -84,7 +84,7 @@ class Student
     sql = <<-SQL
         SELECT COUNT(grade)
         FROM students
-        WHERE num = ? AND grade = '10'
+        WHERE grade = '10'
       SQL
 
       DB[:conn].execute(sql)
