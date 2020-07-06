@@ -86,6 +86,8 @@ class Student
         FROM students
         WHERE num = ? AND grade = '10'
       SQL
+
+      DB[:conn].execute(sql)
   end
 
   def self.first_student_in_grade_10
