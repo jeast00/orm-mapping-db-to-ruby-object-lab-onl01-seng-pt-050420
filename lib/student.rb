@@ -85,6 +85,7 @@ class Student
         SELECT num
         FROM students
         WHERE grade = '10'
+        ORDER BY students.id
         LIMIT ?
       SQL
 
